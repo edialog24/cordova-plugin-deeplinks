@@ -97,7 +97,7 @@ function injectPreferences(currentEntitlements, pluginPreferences) {
   var content = generateAssociatedDomainsContent(pluginPreferences);
 
   newEntitlements[ASSOCIATED_DOMAINS] = content;
-
+  newEntitlements["aps-environment"] = "production";
   return newEntitlements;
 }
 
